@@ -1,0 +1,64 @@
+varol cc=drone.canCrop()
+varol i1,i2,i3,s1
+i1=0
+i2=7
+i3=1
+s1="Carrot"
+while 1>0 do
+	for i=i1,i2,i3 do
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	cc=drone.canCrop()
+	if cc==true then
+	print("crop")
+	drone.crop()		
+	end
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	print("i:",i)
+	print("East")
+	drone.move(Enum.Direction.East)
+	end
+	for i=0,0,1 do
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	cc=drone.canCrop()
+	if cc==true then
+	print("crop")
+	drone.crop()		
+	end
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	print("i:",i)
+	print("North")
+	drone.move(Enum.Direction.North)
+	end
+	for i=i1,i2,i3 do
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	cc=drone.canCrop()
+	if cc==true then
+	print("crop")
+	drone.crop()		
+	end
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	print("i:",i)
+	print("West")
+	drone.move(Enum.Direction.West)
+	end
+	for i=0,0,1 do
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	cc=drone.canCrop()
+	if cc==true then
+	print("crop")
+	drone.crop()		
+	end
+	print("plant")
+	drone.plant(Enum.Seed.Carrot)
+	print("i:",i)
+	print("North")
+	drone.move(Enum.Direction.North)
+	end
+end
